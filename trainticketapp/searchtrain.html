@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Train</title>
+</head>
+<body>
+    <h2 style="color:blue;">SEARCH TRAIN</h2><br>
+    <hr>
+    <form>
+        &nbsp;&nbsp;&nbsp;
+       <b> <label for="from">From:</label></b>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="fromStation" id="fromStation" list="fromStations" required>
+        <datalist name="stations" id="fromStations">
+            <option disabled>---CHOOSE---</option>
+            <option value="MAS">Chennai Central</option>
+            <option value="MS">Chennai Egmore</option>
+            <option value="MDU">Madurai</option>
+            <option value="SVKS">Sivakasi</option>
+        </datalist>
+        <br><br>
+        &nbsp;&nbsp;&nbsp;
+       <b> <label for="to">To:</label></b>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;
+        <input type="text" name="toStation" id="toStation" list="toStations" required>
+            <datalist name="toStations" id="toStations">
+                <option disabled>---CHOOSE---</option>
+                <option value="MAS">Chennai Central</option>
+                <option value="MS">Chennai Egmore</option>
+                <option value="MDU">Madurai</option>
+                <option value="SVKS">Sivakasi</option>
+            </datalist>
+        <br><br>
+        &nbsp;&nbsp;&nbsp;
+        <b><label for="journey">Journey Date:</label></b>
+        <input type="date" name="journeyDate" id="journeyDate" required>
+        <br><br>
+        &nbsp;&nbsp;&nbsp;
+        <button type="submit">Search trains</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>

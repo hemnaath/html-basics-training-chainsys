@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+</head>
+<body>
+    <h3>Add Task</h3>
+    <form action="listtask.html">
+        <label>description:</label>
+        <textarea rows=8 cols="30" name="addtask" id="addtask" placeholder="Add task"required></textarea>
+        <br><br>
+        <label>Due-date</label>
+        <input type="date" name="dueDate" id="dueDate"  max="2021-10-22" min="2021-10-20">
+        <select name="date" id="date" >
+            <option disabled>---SELECT TIME---</option>
+            <option>15:00:00</option>
+            <option>16:00:00</option>
+        </select>
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
